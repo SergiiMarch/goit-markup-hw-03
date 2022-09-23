@@ -14,6 +14,7 @@
   --hero-color: #2f303a;
   --color-section-command: #f5f4fa;
   --border-header: #ececec;
+  --border-color-portfolio: #f5f4fa;
 }
 /* html {
   box-sizing: border-box;
@@ -195,9 +196,10 @@ ol {
 .main-title {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0;
+  margin-top: 200px;
   margin-bottom: 30px;
 
+  max-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -220,6 +222,7 @@ ol {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  min-width: 216px;
 
   cursor: pointer;
   color: var(--white-text-color);
@@ -238,6 +241,7 @@ ol {
 
 .container-item {
   display: flex;
+  margin-top: 94px;
 }
 
 .item-lists:not(:last-child) {
@@ -394,13 +398,29 @@ ol {
 
 /* ------------------------Main --------------------------------------------*/
 
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 34px;
+}
+
 .content-link {
+  padding: 6px 24px 6px 24px;
+
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  max-height: 38px;
 
+  background: var(--border-color-portfolio);
+  border: transparent;
+  border-radius: 4px;
   color: var(--primary-text-color);
 }
 
@@ -416,11 +436,20 @@ ol {
 
 /* -------------Section Перелік-------------------- */
 
+.list-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 .inner-title {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--primary-text-color);
 }
 
 .inner-text {
@@ -428,4 +457,10 @@ ol {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+
+.discription-list {
+  border: 1px solid var(--border-color-portfolio);
+  padding: 20px 24px;
+  border-top: 0;
 }
