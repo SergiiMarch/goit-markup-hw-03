@@ -83,6 +83,12 @@ ol {
   padding-bottom: 94px;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /*----------------------HEADER-------------------------------------*/
 
 .header {
@@ -100,12 +106,14 @@ ol {
 }
 
 .header-text {
-  margin: 24px 93px 24px 0;
+  /* margin: 24px 93px 24px 0; */
+  padding: 24px 0;
+  margin-right: 93px;
 }
 
 .header-box {
   display: flex;
-  gap: 30px;
+  gap: 50px;
 }
 
 .header-text {
@@ -120,10 +128,9 @@ ol {
 .text-link {
   color: var(--acent-color);
 }
-.box-item {
-}
 
 .item-link {
+  padding: 32px 0;
   font-style: normal;
   font-weight: 500;
   line-height: 1.14;
@@ -189,14 +196,16 @@ ol {
 /* ------------Main hero ------------------*/
 .main {
 }
-.hero {
+.section-hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   background-color: var(--hero-color);
 }
 
 .main-title {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 200px;
   margin-bottom: 30px;
 
   max-width: 696px;
@@ -214,7 +223,6 @@ ol {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 200px;
   padding: 10px 32px;
 
   font-style: normal;
@@ -229,6 +237,7 @@ ol {
   background: var(--acent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
 }
 
 .main-btn:hover,
@@ -241,7 +250,6 @@ ol {
 
 .container-item {
   display: flex;
-  margin-top: 94px;
 }
 
 .item-lists:not(:last-child) {
@@ -249,7 +257,7 @@ ol {
 }
 
 .container-subtitle {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 14px;
@@ -260,8 +268,6 @@ ol {
 }
 
 .container-text {
-  padding-bottom: 118px;
-
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -269,6 +275,9 @@ ol {
 }
 
 /* ---------Section Чим займаємось------------ */
+.box {
+  padding-top: 0;
+}
 
 .box-title {
   text-align: center;
@@ -313,8 +322,16 @@ ol {
   justify-content: space-between;
 }
 
+.command-main {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .list-subtitle {
-  margin-top: 30px;
   margin-bottom: 10px;
   text-align: center;
 
@@ -325,8 +342,6 @@ ol {
 }
 
 .list-text {
-  margin-top: 10px;
-  margin-bottom: 30px;
   text-align: center;
 
   font-size: 16px;
@@ -357,10 +372,10 @@ ol {
 }
 
 .adress-page {
+  margin-top: 20px;
 }
 
 .page-box {
-  margin-top: 20px;
 }
 
 .box-list:not(:last-child) {
@@ -403,7 +418,7 @@ ol {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .content-link {
