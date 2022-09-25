@@ -87,6 +87,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  /* overflow: hidden; */
 }
 
 /*----------------------HEADER-------------------------------------*/
@@ -310,7 +311,6 @@ img {
 
 .list-item {
   display: flex;
-  justify-content: space-between;
 }
 
 .command-main {
@@ -364,9 +364,6 @@ img {
 
 .adress-page {
   margin-top: 20px;
-}
-
-.page-box {
 }
 
 .box-list:not(:last-child) {
