@@ -162,15 +162,17 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
   color: var(--acent-color);
 }
 
-.list-link {
+.list-link,
+.link-item {
   font-style: normal;
   font-weight: 500;
-
   line-height: 1.14;
   letter-spacing: 0.02em;
+
   color: var(--title-text-color);
 }
 
@@ -179,22 +181,13 @@ img {
   color: var(--acent-color);
 }
 
-.link-item {
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--title-text-color);
-}
-
 .link-item:hover,
 .link-item:focus {
   color: var(--acent-color);
 }
 
 /* ------------Main hero ------------------*/
-.main {
-}
+
 .section-hero {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -288,9 +281,8 @@ img {
   letter-spacing: 0.03em;
 }
 
-.box-item {
+.box-items {
   display: flex;
-  justify-content: space-between;
 }
 .section-images:not(:last-child) {
   margin-right: 30px;
